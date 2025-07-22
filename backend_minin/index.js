@@ -39,7 +39,7 @@ const server = http.createServer((req, res) => {
           age: 28,
         },
       ];
-      res.end(JSON.stringify(users));
+      res.end(JSON.stringify(users)); //
     }
   } else if (req.method === "POST") {
     const body = [];
