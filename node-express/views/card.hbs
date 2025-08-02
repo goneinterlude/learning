@@ -1,0 +1,27 @@
+<h1>Bucket</h1>
+
+{{#if courses}}
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each courses}}
+        <tr>
+          <td>{{title}}</td>
+          <td>{{count}}</td>
+          <td>
+            <button class="btn btn-small">Remove</button>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <p><strong>Price:</strong> <span class="price">{{price}}</span></p>
+{{else}}
+  <p>Bucket is empty</p>
+{{/if}}
